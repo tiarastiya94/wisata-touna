@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Motel Wisata Touna</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Header -->
+  <header class="h-16 bg-amber-500 flex gap-[200px] text-white items-center px-10 z-10 relative">
+    <a href="card.html" class="text-xl font-semibold">Wisata Touna</a>
+    <nav class="grid gap-4 grid-cols-7 text-sm font-medium">
+      <a href="card.html" class="hover:text-gray-200">Home</a>
+
+      <div class="relative group inline-block text-left">
+        <a href="penginapan.html" class="hover:text-gray-200">Penginapan</a>
+        <div class="absolute hidden group-hover:block bg-amber-500 p-4 mt-2 rounded shadow-lg">
+          <a href="hotel.html" class="block hover:bg-amber-600 px-4 py-2 rounded">Hotel</a>
+          <a href="motel.html" class="block hover:bg-amber-600 px-4 py-2 rounded">Motel</a>
+          <a href="cottage.html" class="block hover:bg-amber-600 px-4 py-2 rounded">Cottage</a>
+          <a href="villa.html" class="block hover:bg-amber-600 px-4 py-2 rounded">Villa</a>
+        </div>
+      </div>
+
+      <a href="card.html" class="hover:text-gray-200">Card</a>
+      <a href="#" class="hover:text-gray-200">Danau</a>
+      <a href="#" class="hover:text-gray-200">Sungai</a>
+      <a href="#" class="hover:text-gray-200">Pemandian</a>
+      <a href="#" class="hover:text-gray-200">Air Terjun</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="p-4 md:p-16">
+    <section class="w-full h-screen relative overflow-hidden">
+      <img 
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/d3/3a/23/lawaka-hotel.jpg?w=1200&h=-1&s=1" 
+        alt="Hero Image"
+        class="w-full h-full object-cover"
+      >
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Motel Sejahtera</h1>
+        <p class="text-lg md:text-xl max-w-xl mb-6">
+          Penginapan nyaman, bersih, dan terjangkau untuk Anda yang berkunjung ke Ampana dan sekitarnya.
+        </p>
+        <a href="#daftar-motel" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded shadow-lg transition duration-300">
+          Lihat Daftar Motel
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Daftar Motel -->
+    <section id="daftar-motel" class="mt-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Pilihan Motel Populer di Touna</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/349057596.jpg?k=f899e316913945a7af25d7c6f51ca743503fd9b3c83cb8ec6598a3eabc01a26f&o=" alt="Motel 1" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Motel Bahagia</h3>
+          <p class="text-gray-700 mb-2">Terletak di pusat kota Ampana, dekat dengan kuliner lokal.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 250.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow">Pesan Sekarang</a>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/693722855.jpg?k=d64d907ba5e4fd4658f5c6a874d18acd5ed2caecbec56c1c179d05e419da0902&o=" alt="Motel 2" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Motel Harmoni</h3>
+          <p class="text-gray-700 mb-2">Suasana tenang dengan fasilitas AC dan WiFi gratis.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 275.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow">Pesan Sekarang</a>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-4">
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/362084463.jpg?k=13ad48847f6023ddda4fa90eec04f922708e46d89beb170633bd98c811d9b7f2&o=" alt="Motel 3" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold mb-2">Motel Pantai Indah</h3>
+          <p class="text-gray-700 mb-2">Berada di tepi pantai dengan pemandangan laut mempesona.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 300.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow">Pesan Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-amber-500 text-white text-center py-6 mt-16">
+    <p>&copy; 2025 Wisata Touna. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>

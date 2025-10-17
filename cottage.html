@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cottage Wisata Touna</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- HEADER -->
+  <header class="h-16 bg-amber-500 flex items-center justify-between px-10 text-white z-10 relative">
+    <a href="index.html" class="text-xl font-semibold hover:text-gray-200 transition">Wisata Touna</a>
+
+    <nav class="flex gap-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-gray-200 transition">Home</a>
+
+      <!-- Dropdown Penginapan -->
+      <div class="relative group">
+        <!-- Tautan utama tetap bisa diklik -->
+        <a href="penginapan.html" class="hover:text-gray-200 transition">Penginapan</a>
+
+        <!-- Dropdown -->
+        <div class="absolute hidden group-hover:flex flex-col bg-amber-500 rounded shadow-lg mt-2 w-40">
+          <a href="hotel.html" class="hover:bg-amber-600 px-4 py-2 rounded-t">Hotel</a>
+          <a href="motel.html" class="hover:bg-amber-600 px-4 py-2">Motel</a>
+          <a href="cottage.html" class="hover:bg-amber-600 px-4 py-2">Cottage</a>
+          <a href="villa.html" class="hover:bg-amber-600 px-4 py-2 rounded-b">Villa</a>
+        </div>
+      </div>
+
+      <a href="card.html" class="hover:text-gray-200 transition">Card</a>
+      <a href="#" class="hover:text-gray-200 transition">Danau</a>
+      <a href="#" class="hover:text-gray-200 transition">Sungai</a>
+      <a href="#" class="hover:text-gray-200 transition">Pemandian</a>
+      <a href="#" class="hover:text-gray-200 transition">Air Terjun</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="p-4 md:p-16">
+    <section class="w-full h-screen relative overflow-hidden rounded-2xl">
+      <img 
+        src="https://cdn.pixabay.com/photo/2017/03/27/13/51/holiday-home-2178820_1280.jpg" 
+        alt="Cottage Hero" 
+        class="w-full h-full object-cover"
+      >
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Cottage Wisata Touna</h1>
+        <p class="text-lg md:text-xl max-w-2xl mb-6">
+          Rasakan pengalaman menginap yang tenang di tengah alam tropis dengan fasilitas modern dan suasana damai.
+        </p>
+        <a href="#daftar-cottage" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+          Jelajahi Cottage
+        </a>
+      </div>
+    </section>
+
+    <!-- DAFTAR COTTAGE -->
+    <section id="daftar-cottage" class="mt-20">
+      <h2 class="text-3xl font-bold text-center text-amber-700 mb-12">Pilihan Cottage Terbaik di Touna</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Cottage 1 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-xl transition p-5">
+          <img src="https://cdn.pixabay.com/photo/2018/08/17/21/25/cottage-3614368_1280.jpg" alt="Cottage 1" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold text-amber-700 mb-2">Cottage Pantai Indah</h3>
+          <p class="text-gray-700 mb-3">Nikmati pemandangan laut dari teras pribadi dan suara ombak yang menenangkan.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 400.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow transition">Pesan Sekarang</a>
+        </div>
+
+        <!-- Cottage 2 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-xl transition p-5">
+          <img src="https://cdn.pixabay.com/photo/2016/10/12/23/23/house-1736296_1280.jpg" alt="Cottage 2" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold text-amber-700 mb-2">Cottage Harmoni Alam</h3>
+          <p class="text-gray-700 mb-3">Terletak di tengah pepohonan rindang, cocok untuk relaksasi dan ketenangan.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 350.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow transition">Pesan Sekarang</a>
+        </div>
+
+        <!-- Cottage 3 -->
+        <div class="bg-white rounded-2xl shadow hover:shadow-xl transition p-5">
+          <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/holiday-2556427_1280.jpg" alt="Cottage 3" class="rounded-2xl mb-4 h-56 w-full object-cover">
+          <h3 class="text-xl font-semibold text-amber-700 mb-2">Cottage Bukit Asri</h3>
+          <p class="text-gray-700 mb-3">Cottage di atas bukit dengan panorama lembah dan udara segar khas pegunungan.</p>
+          <p class="text-amber-600 font-bold mb-4">Mulai Rp 375.000/malam</p>
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded shadow transition">Pesan Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-500 text-white text-center py-6 mt-16">
+    <p>&copy; 2025 Wisata Touna. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
